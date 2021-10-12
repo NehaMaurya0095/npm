@@ -5,10 +5,9 @@ pipeline {
         stage('Build') {
             steps {
                 sh'''
-                ls
-                mkdir test
-                cd test
-                touch abc
+                sudo apt install nodejs
+                sudo apt install npm
+                npm install
                 sh''' 
             }
         }
