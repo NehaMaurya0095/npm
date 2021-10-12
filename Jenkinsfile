@@ -4,7 +4,12 @@ pipeline {
     stages {
         stage('Build') {
             steps {
-                sh 'ls' 
+                sh'''
+                ls
+                mkdir test
+                cd test
+                touch abc
+                sh''' 
             }
         }
     }
