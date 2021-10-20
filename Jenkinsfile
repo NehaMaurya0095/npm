@@ -5,8 +5,8 @@ pipeline {
         stage('Build') {
             steps {
                 sh'''
-                apt install nodejs -S Xenon#flight
-                apt install npm -S Xenon#flight
+                apt install nodejs 
+                apt install npm 
                 npm install
                 sh''' 
             }
